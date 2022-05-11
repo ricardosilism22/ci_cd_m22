@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
+      - name: Checkoutt
         uses: actions/checkout@v3
       - name: Set Default Scheme
         run: |
