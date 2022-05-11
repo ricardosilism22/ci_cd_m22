@@ -2,9 +2,9 @@ name: iOS starter workflow
 
 on:
   push:
-    branches: [ main ]
+    branches: [ none ]
   pull_request:
-    branches: [ main ]
+    branches: [ none ]
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
           echo Using default scheme: $default
       - name: Build
         env:
-          scheme: default
+          scheme: defaultt
           platform: iOS Simulator
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
